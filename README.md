@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# MBTI 퍼스널 트레이닝 매뉴얼 (MBTI Training Guide)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A production-ready single-page React + Tailwind CSS web app for displaying tailored coaching strategies for each MBTI personality type.
 
-## Available Scripts
+## Tech Stack
+- React 18 (functional components, hooks)
+- Tailwind CSS 3.x
+- Framer-motion for micro-animations
+- No backend - all data is hard-coded JSON
 
-In the project directory, you can run:
+## Features
+- Responsive grid layout (4-column desktop, 2-column tablet, 1-column mobile)
+- Interactive cards with hover effects
+- Animated modal with tabs
+- Search and filter functionality
+- Fully keyboard accessible with proper ARIA attributes
 
-### `npm start`
+## Local Development
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+- Node.js (v14.0.0 or higher)
+- npm or yarn
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/mbti-training-guide.git
+cd mbti-training-guide
 
-### `npm test`
+# Install dependencies
+npm install
+# or
+yarn install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Start the development server
+npm start
+# or
+yarn start
+```
 
-### `npm run build`
+The application will be available at `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Deploying to Vercel
+1. Push your code to a GitHub repository
+2. Visit [Vercel](https://vercel.com) and sign in
+3. Click "New Project" and import your GitHub repository
+4. Use default settings (Vercel will automatically detect it's a React app)
+5. Click "Deploy"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Deploying to Replit
+1. Create a new Repl and select "Import from GitHub"
+2. Enter your GitHub repository URL
+3. Set the run command to `npm start`
+4. Click "Import from GitHub" button
+5. Wait for dependencies to install
+6. Your app will be available at the generated Replit URL
 
-### `npm run eject`
+## Project Structure
+```
+src/
+  ├─ App.jsx                (main layout, router-less)
+  ├─ components/
+  │    ├─ MbtiCard.jsx
+  │    ├─ MbtiModal.jsx
+  │    └─ SearchBar.jsx
+  ├─ data/mbti.js           (export const mbtiData = [...])
+  └─ index.css              (@tailwind base; …)
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
+MIT
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created by Jun (2025)
