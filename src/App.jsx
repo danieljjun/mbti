@@ -1,3 +1,8 @@
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Instructor from "./pages/Instructor";
+import Admin from "./pages/Admin";
 import React, { useState } from "react";
 import { mbtiData } from "./data/mbti";
 import MbtiCard from "./components/MbtiCard";
