@@ -1,7 +1,6 @@
 {
-    "buildCommand": "npx react-scripts build",
-    "outputDirectory": "build",
-    "zeroInstall": true,
-    "framework": "other"
-  }
-  
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "build",
+  "zeroInstall": true,
+  "framework": "other"
+}
